@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Simple card helper – yahan error tha */
+.card {
+  @apply bg-slate-900/70 border border-slate-800 rounded-xl p-4 sm:p-5 transition hover:border-emerald-400 hover:-translate-y-1;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+/* Section heading thoda bulky + colorful */
+.section-title {
+  @apply text-2xl font-semibold flex items-center gap-2;
+}
+
+.section-badge {
+  @apply inline-flex items-center justify-center text-xs font-semibold px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/40;
+}
+@keyframes floatBlob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(40px, -40px) scale(1.2);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.blob {
+  animation: floatBlob 10s ease-in-out infinite;
+}
