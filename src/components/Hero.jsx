@@ -29,6 +29,28 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-wrap gap-3 pt-2">
+                    {/* 🔹 Download Resume */}
+                    <a
+                        href="/resume/Nitesh_Singh_Resume.pdf"
+                        download
+                        className="px-5 py-2.5 rounded-full bg-emerald-500
+        text-slate-950 text-sm font-semibold shadow-lg
+        hover:bg-emerald-400 hover:translate-y-0.5 transition"
+                    >
+                        Download Resume
+                    </a>
+
+                    {/* 🔹 View Resume */}
+                    <a
+                        href="/resume/Nitesh_Singh_Resume.pdf"
+                        target="_blank"
+                        className="px-5 py-2.5 rounded-full
+        border border-slate-700 text-sm font-medium
+        hover:border-cyan-400 hover:text-cyan-300 transition"
+                    >
+                        View Resume
+                    </a>
+
                     <a
                         href="https://github.com/NITESH777RAJPUT"
                         target="_blank"
@@ -38,7 +60,7 @@ function Hero() {
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+                        href="https://www.linkedin.com/in/nitesh-singh-rajput-58a200338"
                         target="_blank"
                         className="px-5 py-2.5 rounded-full border border-slate-700 text-sm font-medium hover:border-emerald-400 hover:text-emerald-300 transition"
                     >

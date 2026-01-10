@@ -1,19 +1,5 @@
 const projects = [
     {
-        title: "Budget Tracker – Hackathon Winner",
-        description:
-            "Developed a web app to track product sales, purchase costs, and business expenses with automated profit/loss calculations and bar chart visualizations. Won 1st rank in a TechFest hackathon.",
-        tech: ["React", "Charts", "Product Dev"],
-        year: "2025",
-    },
-    {
-        title: "Finance Intelligent Management Website",
-        description:
-            "An automated finance manager to track expenses, manage budgets, and generate financial reports with a user-friendly interface.",
-        tech: ["React", "LocalStorage", "Data Visualization"],
-        year: "2025",
-    },
-    {
         title: "Pizza Delivery Website",
         description:
             "Pizza delivery platform with customizable pizza options (base, sauce, cheese, veggies), real-time order flow, and Razorpay integration.",
@@ -28,6 +14,20 @@ const projects = [
         tech: ["Node.js", "React.js", "Express.js", "Tailwind CSS"],
         year: "2025",
         live: "https://github.com/NITESH777RAJPUT",
+    },
+    {
+        title: "Budget Tracker – Hackathon Winner",
+        description:
+            "Developed a web app to track product sales, purchase costs, and business expenses with automated profit/loss calculations and bar chart visualizations. Won 1st rank in a TechFest hackathon.",
+        tech: ["React", "Charts", "Product Dev"],
+        year: "2025",
+    },
+    {
+        title: "Finance Intelligent Management Website",
+        description:
+            "An automated finance manager to track expenses, manage budgets, and generate financial reports with a user-friendly interface.",
+        tech: ["React", "LocalStorage", "Data Visualization"],
+        year: "2025",
     },
 ];
 
@@ -57,21 +57,22 @@ function Projects() {
                                 </span>
                             )}
                         </div>
+
                         <p className="text-sm text-slate-300">{project.description}</p>
+
                         <p className="text-xs text-slate-400">
                             Tech: {project.tech.join(", ")}
                         </p>
-                        <div className="flex gap-3 text-xs pt-1">
-                            {project.live && (
-                                <a
-                                    href={project.live}
-                                    target="_blank"
-                                    className="underline hover:text-emerald-400"
-                                >
-                                    View
-                                </a>
-                            )}
-                        </div>
+
+                        {project.live && (
+                            <a
+                                href={project.live}
+                                target="_blank"
+                                className="text-xs underline hover:text-emerald-400 inline-block pt-1"
+                            >
+                                View
+                            </a>
+                        )}
                     </div>
                 ))}
             </div>

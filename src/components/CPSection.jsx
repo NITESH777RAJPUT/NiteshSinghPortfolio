@@ -25,21 +25,21 @@ function CPSection() {
                     <p className="text-xs text-slate-400">Profiles</p>
                     <div className="flex flex-wrap gap-3 text-xs">
                         <a
-                            href="https://www.codechef.com/users/YOUR_CODECHEF_USERNAME"
+                            href="https://www.codechef.com/users/nsr_777"
                             target="_blank"
                             className="px-3 py-2 rounded-full bg-amber-900/60 border border-amber-500/50 hover:border-amber-300 transition"
                         >
                             CodeChef Profile
                         </a>
                         <a
-                            href="https://leetcode.com/YOUR_LEETCODE_USERNAME"
+                            href="https://leetcode.com/Nitesh_777"
                             target="_blank"
                             className="px-3 py-2 rounded-full bg-slate-900 border border-amber-400/60 hover:border-amber-200 transition"
                         >
                             LeetCode Profile
                         </a>
                         <a
-                            href="https://www.hackerrank.com/YOUR_HACKERRANK_USERNAME"
+                            href="https://www.hackerrank.com/niteshsingh57371"
                             target="_blank"
                             className="px-3 py-2 rounded-full bg-emerald-900/50 border border-emerald-500/60 hover:border-emerald-300 transition"
                         >

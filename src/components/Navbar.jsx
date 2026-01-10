@@ -6,6 +6,7 @@ import {
     SiLinkedin,
     SiInstagram,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const socialLinks = [
@@ -13,7 +14,7 @@ function Navbar() {
             name: "CodeChef",
             href: "https://www.codechef.com/users/nsr_777",
             icon: SiCodechef,
-            colorClass: "text-[#D7AF82]", // thoda lighter CodeChef color
+            colorClass: "text-[#D7AF82]",
         },
         {
             name: "LeetCode",
@@ -51,42 +52,46 @@ function Navbar() {
     return (
         <header className="fixed top-0 left-0 right-0 bg-slate-950/80 backdrop-blur border-b border-slate-800 z-20">
             <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+
                 {/* Logo / Name */}
-                <div className="flex items-center gap-3">
+                <Link to="/" className="flex items-center gap-3">
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500 text-slate-950 font-bold shadow-lg">
                         N
                     </span>
                     <div className="leading-tight">
                         <p className="text-sm font-semibold">Nitesh Singh</p>
                         <p className="text-[11px] text-slate-400">
-                            Computer Engineer &amp; Web Developer
+                            Computer Engineer & Web Developer
                         </p>
                     </div>
-                </div>
+                </Link>
 
                 {/* Center nav links */}
                 <div className="hidden md:flex gap-6 text-xs font-medium">
-                    <a href="#about" className="hover:text-emerald-400 transition">
+                    <Link to="/#about" className="hover:text-emerald-400 transition">
                         About
-                    </a>
-                    <a href="#skills" className="hover:text-emerald-400 transition">
+                    </Link>
+                    <Link to="/#skills" className="hover:text-emerald-400 transition">
                         Skills
-                    </a>
-                    <a href="#projects" className="hover:text-emerald-400 transition">
+                    </Link>
+                    <Link to="/#projects" className="hover:text-emerald-400 transition">
                         Projects
-                    </a>
-                    <a href="#cp" className="hover:text-emerald-400 transition">
+                    </Link>
+                    <Link to="/#cp" className="hover:text-emerald-400 transition">
                         CP
-                    </a>
-                    <a href="#certificates" className="hover:text-emerald-400 transition">
+                    </Link>
+
+                    {/* ✅ FULL CERTIFICATES PAGE */}
+                    <Link to="/certificates" className="hover:text-emerald-400 transition">
                         Certificates
-                    </a>
-                    <a href="#contact" className="hover:text-emerald-400 transition">
+                    </Link>
+
+                    <Link to="/#contact" className="hover:text-emerald-400 transition">
                         Contact
-                    </a>
+                    </Link>
                 </div>
 
-                {/* Right – colorful platform icons */}
+                {/* Right – social icons */}
                 <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
                     {socialLinks.map(({ name, href, icon: Icon, colorClass }) => (
                         <a
